@@ -108,14 +108,15 @@ nav {
 .banner-container {
 
     max-width: 1200px;
-    margin: 50px auto 0;
-    min-height: 50px;
+    margin: 50px auto ;
+ 
     display: flex;
     gap: 20px;
 }
 
 .banner-text {
     width: 50%;
+    margin: 100px auto ;
 }
 
 .banner-img {
@@ -145,6 +146,7 @@ nav {
     align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
+    border: 0;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     color: #FFFFFF;
 }
@@ -154,6 +156,7 @@ nav {
     padding: 21px 40px;
     align-items: flex-start;
     gap: 10px;
+    border: 0;
     border-radius: 48px;
     background: #4EC5F7;
     color: #FFFFFF;
@@ -173,7 +176,28 @@ Online Games
     margin: 0 auto;
 }
 
-.online-games .grid-items {
+.play-text-one {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.grad-color-one{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/*.online-games .grid-items {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -191,7 +215,44 @@ Online Games
 .online-games .grid-items .item .cover .watch {
     position: absolute;
 }
+*/
 
+
+
+
+
+
+.online-games .grid-items {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.online-games .grid-items .item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.item{
+    gap: 24px;
+}
+
+.thumb{
+    width: 100%;
+   
+}
+
+
+.watch img{
+    background-color: black;
+}
+.online-games .grid-items .item .cover {
+    position: relative;
+}
+
+.online-games .grid-items .item .cover .watch {
+    position: absolute;
+}
 /*play games anywhere section*/
 
 .play-section {
@@ -215,7 +276,7 @@ Online Games
     position: relative;
     margin-top: 150px;
     margin-bottom: 150px;
-    
+
 
 }
 
@@ -238,14 +299,14 @@ Online Games
     margin: 0 auto;
 }
 
-.play-text h3 {
-    width: 426px;
-    color: #0B0223;
-    font-family: Work Sans;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px;
+.play-text h3
+{
+width: 426px;
+color: #0B0223;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
 }
 
 .play-text {
@@ -263,64 +324,23 @@ Online Games
     position: absolute;
     bottom: -25%;
     right: -25%;
-    border-radius: 8px;
-    border: 10px solid #FFF;
-    background: lightgray -7.209px 0px / 114.78% 100% no-repeat;
     
 }
 
 
 
 
-/* cards section*/
 
-
-/* .card-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-.card-container .cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.card-container .cards .card-items {
-    display: flex;
-    gap: 20px;
-    border: 1px solid blueviolet;
-
-    border-radius: 50px;
+.new-card-div {
     background: #FFF;
 }
 
-.card-container-zero {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-container-zero .cards .card-items {
-    display: flex;
-    gap: 20px;
-    border: 1px solid blueviolet;
-    border-radius: 8px;
-}
-
-*/ 
-
-.new-card-div{
-    background: #FFF;
-}
-.five-card{
+.five-card {
     width: 1200px;
     margin: 0 auto;
     background: #FFF;
 }
+
 .cards {
     display: flex;
     justify-content: center;
@@ -344,6 +364,8 @@ Online Games
 
 /* footer section design starts here */
 
+
+
 footer {
 
     background-color: #0B0223;
@@ -354,7 +376,7 @@ footer {
     margin: 0 auto;
     padding: 100px;
     margin-top: 50px;
-   color: #FFFFFF;
+    color: white;
 }
 
 .footer-main {
@@ -380,7 +402,7 @@ footer {
 }
 
 .footer-container-zero a {
-    color:#FFFFFF;
+    color: #FFF;
     text-align: center;
     font-size: 18px;
     text-decoration: none;
